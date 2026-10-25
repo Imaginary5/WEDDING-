@@ -1,0 +1,1997 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+  <title>Aniket &amp; Shivani — Wedding Invitation | 23 December 2026</title>
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Bodoni Moda, Parisienne, Lora, Josefin Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Josefin+Sans:wght@300;400;500;600&family=Lora:ital,wght@0,400;0,500;1,400&family=Parisienne&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            plum: {
+              950: '#160C20',
+              900: '#21132E',
+              800: '#2B1B3A',
+              700: '#3D2752',
+            },
+            rose: {
+              dusty: '#C98B9B',
+              deep: '#9E5A6D',
+              blush: '#F4D9D6',
+            },
+            gold: {
+              light: '#FBF0D9',
+              champagne: '#D9B26F',
+              deep: '#A57B38',
+            },
+            ivory: '#FFF8EE',
+            sage: {
+              DEFAULT: '#8FA68E',
+              dark: '#5E755F',
+              light: '#B8CBB7'
+            }
+          },
+          fontFamily: {
+            display: ['"Bodoni Moda"', 'serif'],
+            script: ['"Parisienne"', 'cursive'],
+            body: ['"Lora"', 'serif'],
+            label: ['"Josefin Sans"', 'sans-serif'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --bg-plum: #2B1B3A;
+      --dusty-rose: #C98B9B;
+      --blush: #F4D9D6;
+      --champagne-gold: #D9B26F;
+      --ivory: #FFF8EE;
+      --sage: #8FA68E;
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1A0F24;
+      color: var(--ivory);
+      font-family: 'Lora', serif;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    body.locked {
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    /* Twilight Garden Sky Background */
+    .twilight-sky {
+      background: linear-gradient(
+        180deg,
+        #190E24 0%,
+        #2B1B3A 24%,
+        #48294A 48%,
+        #7B465A 68%,
+        #B57278 84%,
+        #D99B7E 94%,
+        #E7B884 100%
+      );
+    }
+
+    /* Horizon Ambient Glow & Mist */
+    .horizon-glow {
+      background: radial-gradient(
+        ellipse 90% 45% at 50% 62%,
+        rgba(244, 217, 214, 0.24) 0%,
+        rgba(217, 178, 111, 0.18) 38%,
+        rgba(201, 139, 155, 0.08) 65%,
+        transparent 100%
+      );
+    }
+
+    .ground-mist {
+      background: linear-gradient(
+        0deg,
+        rgba(26, 15, 36, 0.96) 0%,
+        rgba(43, 27, 58, 0.82) 35%,
+        rgba(201, 139, 155, 0.18) 75%,
+        transparent 100%
+      );
+    }
+
+    /* Gold Foil Text Effect with Animated Shine Sweep */
+    .gold-foil-text {
+      background: linear-gradient(
+        115deg,
+        #C69B53 0%,
+        #F7E5C4 20%,
+        #D9B26F 38%,
+        #FFFDF7 50%,
+        #D9B26F 62%,
+        #B1843D 80%,
+        #F5E1BC 100%
+      );
+      background-size: 240% auto;
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      animation: goldTextShine 8s ease-in-out infinite;
+      filter: drop-shadow(0 2px 12px rgba(217, 178, 111, 0.25));
+    }
+
+    @keyframes goldTextShine {
+      0%, 15% { background-position: 0% center; }
+      50% { background-position: 100% center; }
+      85%, 100% { background-position: 0% center; }
+    }
+
+    /* Frosted Glass Luxury Cards */
+    .frosted-card {
+      background: linear-gradient(
+        145deg,
+        rgba(43, 27, 58, 0.62) 0%,
+        rgba(30, 18, 42, 0.78) 100%
+      );
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(217, 178, 111, 0.42);
+      box-shadow:
+        0 16px 40px -10px rgba(12, 6, 20, 0.65),
+        inset 0 1px 1px rgba(255, 248, 238, 0.22),
+        0 0 25px rgba(217, 178, 111, 0.08);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.5s ease, box-shadow 0.5s ease;
+    }
+
+    .frosted-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(247, 229, 196, 0.75);
+      box-shadow:
+        0 20px 45px -10px rgba(12, 6, 20, 0.75),
+        inset 0 1px 2px rgba(255, 248, 238, 0.3),
+        0 0 30px rgba(217, 178, 111, 0.2);
+    }
+
+    /* Card Light Sweep Overlay */
+    .frosted-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -150%;
+      width: 85%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 248, 238, 0.08),
+        rgba(217, 178, 111, 0.16),
+        rgba(255, 248, 238, 0.08),
+        transparent
+      );
+      transform: skewX(-24deg);
+      animation: cardSweep 9s ease-in-out infinite;
+      pointer-events: none;
+    }
+
+    @keyframes cardSweep {
+      0%, 55% { left: -150%; }
+      100% { left: 200%; }
+    }
+
+    /* Opening Screen Curtain & Petal Parting */
+    #opening-overlay {
+      transition: opacity 1.4s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.4s;
+    }
+
+    #opening-overlay.opened {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .gate-left, .gate-right {
+      transition: transform 1.6s cubic-bezier(0.22, 1, 0.36, 1), opacity 1.4s ease;
+      will-change: transform, opacity;
+    }
+
+    #opening-overlay.opened .gate-left {
+      transform: translate3d(-42%, -6%, 0) scale(1.08) rotate(-8deg);
+      opacity: 0;
+    }
+
+    #opening-overlay.opened .gate-right {
+      transform: translate3d(42%, -6%, 0) scale(1.08) rotate(8deg);
+      opacity: 0;
+    }
+
+    #opening-overlay.opened .monogram-seal {
+      transform: scale(1.22);
+      opacity: 0;
+      transition: transform 1.1s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.9s ease;
+    }
+
+    /* Arch Flower Bloom & Sway Animations */
+    .arch-flower {
+      transform-box: fill-box;
+      transform-origin: center center;
+      opacity: 0;
+      transform: scale(0.15) rotate(-12deg);
+    }
+
+    body.scene-active .arch-flower {
+      animation:
+        bloomOpen 1.3s cubic-bezier(0.22, 1, 0.36, 1) forwards,
+        flowerSway 6.5s ease-in-out infinite alternate;
+      animation-delay: var(--bloom-delay, 0.2s), calc(var(--bloom-delay, 0.2s) + 1.3s);
+    }
+
+    @keyframes bloomOpen {
+      0% {
+        opacity: 0;
+        transform: scale(0.15) rotate(-12deg);
+      }
+      70% {
+        opacity: 1;
+        transform: scale(1.05) rotate(2deg);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) rotate(0deg);
+      }
+    }
+
+    @keyframes flowerSway {
+      0% { transform: scale(1) rotate(-2.2deg) translateY(0px); }
+      100% { transform: scale(1.02) rotate(2.2deg) translateY(-2.5px); }
+    }
+
+    /* Gold Vine Self-Drawing Animation */
+    .draw-vine {
+      stroke-dasharray: 1200;
+      stroke-dashoffset: 1200;
+    }
+
+    body.scene-active .draw-vine {
+      animation: drawVinePath 3.4s cubic-bezier(0.35, 0, 0.25, 1) forwards;
+      animation-delay: var(--vine-delay, 0.2s);
+    }
+
+    @keyframes drawVinePath {
+      to { stroke-dashoffset: 0; }
+    }
+
+    /* Fairy Lights Twinkle Wave */
+    .fairy-bulb {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: fairyTwinkle var(--twinkle-dur, 3.2s) ease-in-out infinite alternate;
+      animation-delay: var(--twinkle-delay, 0s);
+    }
+
+    @keyframes fairyTwinkle {
+      0% {
+        opacity: 0.32;
+        transform: scale(0.75);
+      }
+      50% {
+        opacity: 0.95;
+        transform: scale(1.12);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1.28);
+      }
+    }
+
+    /* Star Glint Twinkle on Flowers */
+    .star-glint {
+      transform-box: fill-box;
+      transform-origin: center;
+      animation: glintSparkle 4.5s ease-in-out infinite;
+      animation-delay: var(--glint-delay, 0s);
+    }
+
+    @keyframes glintSparkle {
+      0%, 100% { opacity: 0.1; transform: scale(0.4) rotate(0deg); }
+      50% { opacity: 0.95; transform: scale(1.15) rotate(45deg); }
+    }
+
+    /* Hanging Lantern Gentle Pendulum Sway */
+    .lantern-sway-left {
+      transform-origin: 50% 0%;
+      animation: pendulumSwing 5.8s ease-in-out infinite alternate;
+    }
+    .lantern-sway-right {
+      transform-origin: 50% 0%;
+      animation: pendulumSwing 6.4s ease-in-out infinite alternate-reverse;
+    }
+
+    @keyframes pendulumSwing {
+      0% { transform: rotate(-2.5deg); }
+      100% { transform: rotate(2.5deg); }
+    }
+
+    /* Scroll Fade-Up Reveal */
+    .reveal-section {
+      opacity: 0;
+      transform: translate3d(0, 32px, 0);
+      transition: opacity 1.1s cubic-bezier(0.22, 1, 0.36, 1), transform 1.1s cubic-bezier(0.22, 1, 0.36, 1);
+      will-change: opacity, transform;
+    }
+
+    .reveal-section.is-visible {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+
+    /* Soft Digit Flip for Countdown */
+    .digit-box {
+      perspective: 600px;
+    }
+
+    .digit-value {
+      display: inline-block;
+      transition: transform 0.45s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.45s ease;
+      transform-origin: center center;
+    }
+
+    .digit-value.flipping {
+      transform: rotateX(75deg) scale(0.92);
+      opacity: 0.25;
+    }
+
+    /* Pulsing Gold Heart */
+    .gold-heart-pulse {
+      transform-origin: center;
+      animation: heartPulse 2.8s ease-in-out infinite;
+    }
+
+    @keyframes heartPulse {
+      0%, 100% { transform: scale(1); filter: drop-shadow(0 0 8px rgba(217, 178, 111, 0.4)); }
+      35% { transform: scale(1.14); filter: drop-shadow(0 0 18px rgba(247, 229, 196, 0.85)); }
+      60% { transform: scale(1.05); filter: drop-shadow(0 0 12px rgba(217, 178, 111, 0.6)); }
+    }
+
+    /* Gold Button Styling */
+    .gold-btn {
+      background: linear-gradient(135deg, rgba(217, 178, 111, 0.22) 0%, rgba(165, 123, 56, 0.38) 100%);
+      border: 1px solid rgba(217, 178, 111, 0.65);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 248, 238, 0.25);
+      transition: all 0.35s ease;
+    }
+
+    .gold-btn:hover, .gold-btn:focus-visible {
+      background: linear-gradient(135deg, rgba(217, 178, 111, 0.38) 0%, rgba(185, 140, 68, 0.55) 100%);
+      border-color: #FBF0D9;
+      box-shadow: 0 6px 26px rgba(217, 178, 111, 0.32), inset 0 1px 2px rgba(255, 248, 238, 0.4);
+      transform: translateY(-2px);
+    }
+
+    /* Editable Venue Input Styling */
+    .venue-editable {
+      border-bottom: 1px dashed rgba(217, 178, 111, 0.45);
+      transition: border-color 0.3s ease, background-color 0.3s ease;
+    }
+    .venue-editable:focus {
+      outline: none;
+      border-bottom-color: #FBF0D9;
+      background-color: rgba(217, 178, 111, 0.1);
+      border-radius: 4px;
+    }
+
+    /* Respect Reduced Motion Preference */
+    @media (prefers-reduced-motion: reduce) {
+      *, ::before, ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+      .arch-flower {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+      .draw-vine {
+        stroke-dashoffset: 0 !important;
+      }
+      .reveal-section {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+
+<body class="locked antialiased selection:bg-gold-champagne/30 selection:text-ivory">
+
+  <!-- =====================================================================
+       SHARED SVG DEFS: Gold Foil Gradients, Botanicals, Flowers & Glows
+       (100% Custom Hand-Crafted SVG Artwork - Zero Emoji)
+  ====================================================================== -->
+  <svg width="0" height="0" class="fixed pointer-events-none opacity-0" aria-hidden="true">
+    <defs>
+      <!-- Animated Metallic Gold Foil Linear Gradient -->
+      <linearGradient id="gold-foil" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#A67C37" />
+        <stop offset="22%" stop-color="#E5C583" />
+        <stop offset="45%" stop-color="#FFF6E0" />
+        <stop offset="65%" stop-color="#D9B26F" />
+        <stop offset="85%" stop-color="#9E732F" />
+        <stop offset="100%" stop-color="#F3DCAC" />
+        <animate attributeName="x1" values="-30%;70%;-30%" dur="9s" repeatCount="indefinite" />
+        <animate attributeName="x2" values="70%;170%;70%" dur="9s" repeatCount="indefinite" />
+      </linearGradient>
+
+      <!-- Soft Champagne Gold Stroke Gradient -->
+      <linearGradient id="gold-line" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#A67C37" stop-opacity="0.6" />
+        <stop offset="30%" stop-color="#F7E5C4" stop-opacity="0.95" />
+        <stop offset="50%" stop-color="#FFFDF7" stop-opacity="1" />
+        <stop offset="70%" stop-color="#D9B26F" stop-opacity="0.95" />
+        <stop offset="100%" stop-color="#A67C37" stop-opacity="0.6" />
+      </linearGradient>
+
+      <!-- Blush & Dusty Rose Petal Gradient -->
+      <radialGradient id="petal-blush" cx="50%" cy="65%" r="65%">
+        <stop offset="0%" stop-color="#9E5A6D" />
+        <stop offset="45%" stop-color="#C98B9B" />
+        <stop offset="82%" stop-color="#F4D9D6" />
+        <stop offset="100%" stop-color="#FFF8EE" />
+      </radialGradient>
+
+      <!-- Deep Rose & Plum Velvet Gradient -->
+      <radialGradient id="petal-deep-rose" cx="50%" cy="60%" r="65%">
+        <stop offset="0%" stop-color="#5C283E" />
+        <stop offset="48%" stop-color="#9A5168" />
+        <stop offset="85%" stop-color="#C98B9B" />
+        <stop offset="100%" stop-color="#F5DFDC" />
+      </radialGradient>
+
+      <!-- Ivory & Champagne Peony Gradient -->
+      <radialGradient id="petal-ivory" cx="50%" cy="55%" r="65%">
+        <stop offset="0%" stop-color="#D9B26F" />
+        <stop offset="38%" stop-color="#F4D9D6" />
+        <stop offset="78%" stop-color="#FFF8EE" />
+        <stop offset="100%" stop-color="#FFFFFF" />
+      </radialGradient>
+
+      <!-- Sacred Lotus Petal Gradient -->
+      <linearGradient id="petal-lotus" x1="50%" y1="0%" x2="50%" y2="100%">
+        <stop offset="0%" stop-color="#FFFDF9" />
+        <stop offset="35%" stop-color="#F4D9D6" />
+        <stop offset="75%" stop-color="#C98B9B" />
+        <stop offset="100%" stop-color="#7D3E54" />
+      </linearGradient>
+
+      <!-- Eucalyptus Sage Leaf Gradient -->
+      <linearGradient id="leaf-sage" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#B6CBB5" />
+        <stop offset="55%" stop-color="#8FA68E" />
+        <stop offset="100%" stop-color="#4A614B" />
+      </linearGradient>
+
+      <!-- Deep Twilight Foliage Silhouette Gradient -->
+      <linearGradient id="foliage-silhouette" x1="0%" y1="0%" x2="0%" y2="100%">
+        <stop offset="0%" stop-color="#3D2752" stop-opacity="0.7" />
+        <stop offset="100%" stop-color="#180D22" stop-opacity="0.95" />
+      </linearGradient>
+
+      <!-- Warm Fairy Light Bulb Glow -->
+      <radialGradient id="fairy-glow" cx="50%" cy="50%" r="50%">
+        <stop offset="0%" stop-color="#FFFDF8" stop-opacity="1" />
+        <stop offset="30%" stop-color="#FBE2A7" stop-opacity="0.85" />
+        <stop offset="65%" stop-color="#D9B26F" stop-opacity="0.35" />
+        <stop offset="100%" stop-color="#D9B26F" stop-opacity="0" />
+      </radialGradient>
+
+      <!-- Soft Gold Drop Shadow Filter -->
+      <filter id="soft-gold-glow" x="-25%" y="-25%" width="150%" height="150%">
+        <feGaussianBlur stdDeviation="3" result="blur" />
+        <feMerge>
+          <feMergeNode in="blur" />
+          <feMergeNode in="SourceGraphic" />
+        </feMerge>
+      </filter>
+
+      <!-- 1. LAYERED BLUSH PEONY FLOWER -->
+      <g id="flower-peony">
+        <!-- Outer Soft Petals -->
+        <g fill="url(#petal-blush)" stroke="url(#gold-foil)" stroke-width="0.75">
+          <path d="M0,-26 C12,-28 24,-18 22,-4 C20,8 8,14 0,10 C-8,14 -20,8 -22,-4 C-24,-18 -12,-28 0,-26 Z" />
+          <path d="M0,-26 C12,-28 24,-18 22,-4 C20,8 8,14 0,10 C-8,14 -20,8 -22,-4 C-24,-18 -12,-28 0,-26 Z" transform="rotate(60)" />
+          <path d="M0,-26 C12,-28 24,-18 22,-4 C20,8 8,14 0,10 C-8,14 -20,8 -22,-4 C-24,-18 -12,-28 0,-26 Z" transform="rotate(120)" />
+          <path d="M0,-26 C12,-28 24,-18 22,-4 C20,8 8,14 0,10 C-8,14 -20,8 -22,-4 C-24,-18 -12,-28 0,-26 Z" transform="rotate(180)" />
+          <path d="M0,-26 C12,-28 24,-18 22,-4 C20,8 8,14 0,10 C-8,14 -20,8 -22,-4 C-24,-18 -12,-28 0,-26 Z" transform="rotate(240)" />
+          <path d="M0,-26 C12,-28 24,-18 22,-4 C20,8 8,14 0,10 C-8,14 -20,8 -22,-4 C-24,-18 -12,-28 0,-26 Z" transform="rotate(300)" />
+        </g>
+        <!-- Middle Ruffled Petals -->
+        <g fill="url(#petal-ivory)" stroke="url(#gold-foil)" stroke-width="0.7" transform="rotate(30) scale(0.74)">
+          <path d="M0,-24 C10,-26 19,-16 17,-3 C15,7 6,12 0,8 C-6,12 -15,7 -17,-3 C-19,-16 -10,-26 0,-24 Z" />
+          <path d="M0,-24 C10,-26 19,-16 17,-3 C15,7 6,12 0,8 C-6,12 -15,7 -17,-3 C-19,-16 -10,-26 0,-24 Z" transform="rotate(72)" />
+          <path d="M0,-24 C10,-26 19,-16 17,-3 C15,7 6,12 0,8 C-6,12 -15,7 -17,-3 C-19,-16 -10,-26 0,-24 Z" transform="rotate(144)" />
+          <path d="M0,-24 C10,-26 19,-16 17,-3 C15,7 6,12 0,8 C-6,12 -15,7 -17,-3 C-19,-16 -10,-26 0,-24 Z" transform="rotate(216)" />
+          <path d="M0,-24 C10,-26 19,-16 17,-3 C15,7 6,12 0,8 C-6,12 -15,7 -17,-3 C-19,-16 -10,-26 0,-24 Z" transform="rotate(288)" />
+        </g>
+        <!-- Inner Cupped Petals -->
+        <g fill="url(#petal-blush)" stroke="url(#gold-foil)" stroke-width="0.65" transform="scale(0.45)">
+          <path d="M0,-20 C9,-20 16,-11 13,0 C10,9 0,12 0,12 C0,12 -10,9 -13,0 C-16,-11 -9,-20 0,-20 Z" />
+          <path d="M0,-20 C9,-20 16,-11 13,0 C10,9 0,12 0,12 C0,12 -10,9 -13,0 C-16,-11 -9,-20 0,-20 Z" transform="rotate(90)" />
+          <path d="M0,-20 C9,-20 16,-11 13,0 C10,9 0,12 0,12 C0,12 -10,9 -13,0 C-16,-11 -9,-20 0,-20 Z" transform="rotate(180)" />
+          <path d="M0,-20 C9,-20 16,-11 13,0 C10,9 0,12 0,12 C0,12 -10,9 -13,0 C-16,-11 -9,-20 0,-20 Z" transform="rotate(270)" />
+        </g>
+        <!-- Golden Stamen Heart -->
+        <circle cx="0" cy="0" r="4.2" fill="url(#gold-foil)" />
+        <circle cx="-2.5" cy="-2" r="1" fill="#FFFDF7" />
+        <circle cx="2.5" cy="-1.5" r="0.9" fill="#FFFDF7" />
+        <circle cx="0" cy="2.8" r="0.9" fill="#FFFDF7" />
+      </g>
+
+      <!-- 2. GARDEN ENGLISH ROSE (DEEP ROSE & GOLD) -->
+      <g id="flower-rose">
+        <g fill="url(#petal-deep-rose)" stroke="url(#gold-foil)" stroke-width="0.75">
+          <path d="M0,-22 C14,-22 22,-10 18,4 C14,16 -2,20 -12,12 C-22,4 -18,-22 0,-22 Z" />
+          <path d="M0,-22 C14,-22 22,-10 18,4 C14,16 -2,20 -12,12 C-22,4 -18,-22 0,-22 Z" transform="rotate(72)" />
+          <path d="M0,-22 C14,-22 22,-10 18,4 C14,16 -2,20 -12,12 C-22,4 -18,-22 0,-22 Z" transform="rotate(144)" />
+          <path d="M0,-22 C14,-22 22,-10 18,4 C14,16 -2,20 -12,12 C-22,4 -18,-22 0,-22 Z" transform="rotate(216)" />
+          <path d="M0,-22 C14,-22 22,-10 18,4 C14,16 -2,20 -12,12 C-22,4 -18,-22 0,-22 Z" transform="rotate(288)" />
+        </g>
+        <g fill="url(#petal-blush)" stroke="url(#gold-foil)" stroke-width="0.7" transform="rotate(36) scale(0.66)">
+          <path d="M0,-20 C12,-20 19,-8 15,4 C11,14 -4,17 -12,9 C-19,2 -15,-20 0,-20 Z" />
+          <path d="M0,-20 C12,-20 19,-8 15,4 C11,14 -4,17 -12,9 C-19,2 -15,-20 0,-20 Z" transform="rotate(90)" />
+          <path d="M0,-20 C12,-20 19,-8 15,4 C11,14 -4,17 -12,9 C-19,2 -15,-20 0,-20 Z" transform="rotate(180)" />
+          <path d="M0,-20 C12,-20 19,-8 15,4 C11,14 -4,17 -12,9 C-19,2 -15,-20 0,-20 Z" transform="rotate(270)" />
+        </g>
+        <!-- Rose Spiral Center -->
+        <path d="M-5,-2 C-2,-7 6,-6 7,0 C8,5 2,9 -4,6 C-9,3 -8,-5 -1,-8" fill="none" stroke="url(#gold-foil)" stroke-width="1.1" stroke-linecap="round" />
+        <circle cx="0" cy="0" r="2.2" fill="url(#gold-foil)" />
+      </g>
+
+      <!-- 3. SACRED ROYAL LOTUS (MANDAP CROWN FLOWER) -->
+      <g id="flower-lotus">
+        <!-- Back Wide Lotus Petals -->
+        <g fill="url(#petal-lotus)" stroke="url(#gold-foil)" stroke-width="0.8">
+          <path d="M0,6 C-12,-4 -15,-20 0,-32 C15,-20 12,-4 0,6 Z" transform="rotate(-52)" />
+          <path d="M0,6 C-12,-4 -15,-20 0,-32 C15,-20 12,-4 0,6 Z" transform="rotate(52)" />
+          <path d="M0,6 C-12,-4 -15,-20 0,-34 C15,-20 12,-4 0,6 Z" transform="rotate(-26)" />
+          <path d="M0,6 C-12,-4 -15,-20 0,-34 C15,-20 12,-4 0,6 Z" transform="rotate(26)" />
+          <path d="M0,8 C-13,-4 -16,-22 0,-36 C16,-22 13,-4 0,8 Z" />
+        </g>
+        <!-- Foreground Ivory & Gold Tipped Lotus Petals -->
+        <g fill="url(#petal-ivory)" stroke="url(#gold-foil)" stroke-width="0.75">
+          <path d="M0,8 C-9,0 -11,-14 0,-25 C11,-14 9,0 0,8 Z" transform="rotate(-36)" />
+          <path d="M0,8 C-9,0 -11,-14 0,-25 C11,-14 9,0 0,8 Z" transform="rotate(36)" />
+          <path d="M0,8 C-9,0 -11,-15 0,-27 C11,-15 9,0 0,8 Z" transform="rotate(-14)" />
+          <path d="M0,8 C-9,0 -11,-15 0,-27 C11,-15 9,0 0,8 Z" transform="rotate(14)" />
+          <path d="M0,9 C-8,1 -10,-16 0,-28 C10,-16 8,1 0,9 Z" />
+        </g>
+        <!-- Lotus Base Calyx -->
+        <path d="M-16,6 Q0,15 16,6 Q8,12 0,12 Q-8,12 -16,6 Z" fill="url(#gold-foil)" />
+      </g>
+
+      <!-- 4. DELICATE STARRY JASMINE BLOSSOM -->
+      <g id="flower-jasmine">
+        <g fill="url(#petal-ivory)" stroke="url(#gold-foil)" stroke-width="0.65">
+          <path d="M0,0 C-4,-5 -5,-13 0,-17 C5,-13 4,-5 0,0 Z" />
+          <path d="M0,0 C-4,-5 -5,-13 0,-17 C5,-13 4,-5 0,0 Z" transform="rotate(72)" />
+          <path d="M0,0 C-4,-5 -5,-13 0,-17 C5,-13 4,-5 0,0 Z" transform="rotate(144)" />
+          <path d="M0,0 C-4,-5 -5,-13 0,-17 C5,-13 4,-5 0,0 Z" transform="rotate(216)" />
+          <path d="M0,0 C-4,-5 -5,-13 0,-17 C5,-13 4,-5 0,0 Z" transform="rotate(288)" />
+        </g>
+        <circle cx="0" cy="0" r="2.4" fill="url(#gold-foil)" />
+      </g>
+
+      <!-- 5. EUCALYPTUS & GOLD FOIL SPRIG -->
+      <g id="sprig-eucalyptus">
+        <path d="M0,30 Q4,0 18,-30" fill="none" stroke="url(#gold-foil)" stroke-width="1.1" stroke-linecap="round" />
+        <!-- Sage Leaves with Gold Veins -->
+        <g fill="url(#leaf-sage)" stroke="url(#gold-foil)" stroke-width="0.65">
+          <path d="M2,18 C-10,16 -16,6 -8,0 C-2,-4 4,6 2,18 Z" />
+          <path d="M4,10 C16,10 22,0 15,-6 C9,-11 3,0 4,10 Z" />
+          <path d="M7,-2 C-5,-5 -10,-15 -2,-20 C4,-24 9,-12 7,-2 Z" />
+          <path d="M11,-12 C22,-10 28,-20 21,-26 C15,-30 10,-20 11,-12 Z" />
+          <path d="M18,-30 C12,-38 18,-46 24,-42 C30,-38 24,-28 18,-30 Z" />
+        </g>
+      </g>
+
+      <!-- 6. FOUR-POINT STAR SPARKLE GLINT -->
+      <g id="sparkle-star">
+        <path d="M0,-12 Q0,0 12,0 Q0,0 0,12 Q0,0 -12,0 Q0,0 0,-12 Z" fill="url(#gold-foil)" />
+        <circle cx="0" cy="0" r="2" fill="#FFFDF9" />
+      </g>
+
+      <!-- 7. HANGING GARDEN LANTERN -->
+      <g id="garden-lantern">
+        <line x1="0" y1="0" x2="0" y2="65" stroke="url(#gold-foil)" stroke-width="1" />
+        <circle cx="0" cy="68" r="3" fill="none" stroke="url(#gold-foil)" stroke-width="1" />
+        <!-- Lantern Dome -->
+        <path d="M-12,78 C-12,70 12,70 12,78 L16,84 L-16,84 Z" fill="#2B1B3A" stroke="url(#gold-foil)" stroke-width="1" />
+        <!-- Lantern Glass Body with Warm Glow -->
+        <path d="M-14,84 L14,84 L10,116 L-10,116 Z" fill="url(#fairy-glow)" stroke="url(#gold-foil)" stroke-width="1" />
+        <line x1="-6" y1="84" x2="-4" y2="116" stroke="url(#gold-foil)" stroke-width="0.6" />
+        <line x1="6" y1="84" x2="4" y2="116" stroke="url(#gold-foil)" stroke-width="0.6" />
+        <!-- Inner Candle Flame Glow -->
+        <circle cx="0" cy="100" r="12" fill="url(#fairy-glow)" />
+        <path d="M0,93 C3,98 3,103 0,105 C-3,103 -3,98 0,93 Z" fill="#FFFDF8" />
+        <!-- Lantern Base Finial -->
+        <path d="M-10,116 L10,116 L4,123 L-4,123 Z" fill="#2B1B3A" stroke="url(#gold-foil)" stroke-width="1" />
+        <path d="M0,123 L0,131 M-2,127 L2,127" stroke="url(#gold-foil)" stroke-width="1" />
+      </g>
+    </defs>
+  </svg>
+
+  <!-- =====================================================================
+       SECTION 1: GENTLE TAP-TO-OPEN MONOGRAM OVERLAY SCREEN
+  ====================================================================== -->
+  <div id="opening-overlay" class="fixed inset-0 z-50 flex flex-col items-center justify-center twilight-sky overflow-hidden select-none cursor-pointer" role="button" tabindex="0" aria-label="Tap to open Aniket and Shivani's wedding invitation">
+    
+    <!-- Ambient Bokeh in Opening Screen -->
+    <div class="absolute inset-0 horizon-glow pointer-events-none"></div>
+
+    <!-- Left Botanical Gate Cluster -->
+    <svg class="gate-left absolute -left-12 -top-8 w-72 sm:w-96 h-[110vh] pointer-events-none opacity-85" viewBox="0 0 300 600" fill="none">
+      <path d="M-20,60 Q140,180 90,340 T160,580" stroke="url(#gold-foil)" stroke-width="1.5" fill="none" opacity="0.6" />
+      <use href="#sprig-eucalyptus" transform="translate(80, 140) rotate(45) scale(1.6)" />
+      <use href="#sprig-eucalyptus" transform="translate(110, 320) rotate(65) scale(1.8)" />
+      <use href="#sprig-eucalyptus" transform="translate(75, 460) rotate(35) scale(1.5)" />
+      <use href="#flower-peony" transform="translate(95, 190) scale(1.55)" />
+      <use href="#flower-rose" transform="translate(125, 280) scale(1.3)" />
+      <use href="#flower-lotus" transform="translate(85, 390) rotate(25) scale(1.35)" />
+      <use href="#flower-jasmine" transform="translate(145, 225) scale(1.1)" />
+      <use href="#flower-jasmine" transform="translate(135, 355) scale(1)" />
+    </svg>
+
+    <!-- Right Botanical Gate Cluster -->
+    <svg class="gate-right absolute -right-12 -top-8 w-72 sm:w-96 h-[110vh] pointer-events-none opacity-85" viewBox="0 0 300 600" fill="none">
+      <path d="M320,60 Q160,180 210,340 T140,580" stroke="url(#gold-foil)" stroke-width="1.5" fill="none" opacity="0.6" />
+      <use href="#sprig-eucalyptus" transform="translate(220, 140) scale(-1.6, 1.6) rotate(45)" />
+      <use href="#sprig-eucalyptus" transform="translate(190, 320) scale(-1.8, 1.8) rotate(65)" />
+      <use href="#sprig-eucalyptus" transform="translate(225, 460) scale(-1.5, 1.5) rotate(35)" />
+      <use href="#flower-peony" transform="translate(205, 190) scale(1.55)" />
+      <use href="#flower-rose" transform="translate(175, 280) scale(1.3)" />
+      <use href="#flower-lotus" transform="translate(215, 390) rotate(-25) scale(1.35)" />
+      <use href="#flower-jasmine" transform="translate(155, 225) scale(1.1)" />
+      <use href="#flower-jasmine" transform="translate(165, 355) scale(1)" />
+    </svg>
+
+    <!-- Center Monogram Seal & Parting Petals -->
+    <div class="monogram-seal relative z-10 flex flex-col items-center px-6 text-center max-w-md mx-auto">
+      <p class="font-label text-xs tracking-[0.35em] uppercase text-gold-light/85 mb-6">
+        With love and blessings
+      </p>
+
+      <!-- Ornate Gold Crest with Parting Petals -->
+      <div class="relative w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center">
+        <!-- Soft Golden Halo Behind Seal -->
+        <div class="absolute inset-4 rounded-full bg-gold-champagne/15 blur-2xl animate-pulse"></div>
+
+        <svg class="w-full h-full overflow-visible" viewBox="0 0 240 240">
+          <!-- Outer Dotted & Solid Gold Rings -->
+          <circle cx="120" cy="120" r="104" fill="none" stroke="url(#gold-foil)" stroke-width="0.8" stroke-dasharray="3 5" />
+          <circle cx="120" cy="120" r="96" fill="rgba(43, 27, 58, 0.72)" stroke="url(#gold-foil)" stroke-width="1.5" />
+          <circle cx="120" cy="120" r="88" fill="none" stroke="url(#gold-foil)" stroke-width="0.6" opacity="0.7" />
+
+          <!-- Left Wreath Branch -->
+          <g class="gate-left">
+            <path d="M120,208 C64,204 28,162 28,116 C28,74 58,38 102,26" fill="none" stroke="url(#gold-foil)" stroke-width="1.2" />
+            <use href="#sprig-eucalyptus" transform="translate(36, 145) rotate(-20) scale(0.72)" />
+            <use href="#sprig-eucalyptus" transform="translate(46, 82) rotate(25) scale(0.72)" />
+            <use href="#flower-rose" transform="translate(34, 118) scale(0.68)" />
+            <use href="#flower-peony" transform="translate(76, 198) scale(0.75)" />
+            <use href="#flower-jasmine" transform="translate(56, 62) scale(0.7)" />
+          </g>
+
+          <!-- Right Wreath Branch -->
+          <g class="gate-right">
+            <path d="M120,208 C176,204 212,162 212,116 C212,74 182,38 138,26" fill="none" stroke="url(#gold-foil)" stroke-width="1.2" />
+            <use href="#sprig-eucalyptus" transform="translate(204, 145) scale(-0.72, 0.72) rotate(-20)" />
+            <use href="#sprig-eucalyptus" transform="translate(194, 82) scale(-0.72, 0.72) rotate(25)" />
+            <use href="#flower-rose" transform="translate(206, 118) scale(0.68)" />
+            <use href="#flower-peony" transform="translate(164, 198) scale(0.75)" />
+            <use href="#flower-jasmine" transform="translate(184, 62) scale(0.7)" />
+          </g>
+
+          <!-- Crown Lotus at Top of Crest -->
+          <use href="#flower-lotus" transform="translate(120, 26) scale(0.72)" />
+          <!-- Bottom Jasmine Cluster -->
+          <use href="#flower-jasmine" transform="translate(120, 212) scale(0.85)" />
+
+          <!-- Sparkle Glints -->
+          <use href="#sparkle-star" class="star-glint" style="--glint-delay: 0.2s" transform="translate(65, 50) scale(0.65)" />
+          <use href="#sparkle-star" class="star-glint" style="--glint-delay: 1.5s" transform="translate(178, 56) scale(0.55)" />
+          <use href="#sparkle-star" class="star-glint" style="--glint-delay: 0.8s" transform="translate(120, 185) scale(0.6)" />
+        </svg>
+
+        <!-- Gold "A & S" Monogram Letters -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center pt-1">
+          <span class="font-display text-4xl sm:text-5xl tracking-wider gold-foil-text font-medium">
+            A <span class="font-script text-3xl sm:text-4xl mx-0.5">&amp;</span> S
+          </span>
+          <span class="font-label text-[10px] tracking-[0.28em] uppercase text-rose-blush/80 mt-2">
+            23 . 12 . 2026
+          </span>
+        </div>
+      </div>
+
+      <!-- Tap to Open Prompt Button -->
+      <div class="mt-8 flex flex-col items-center">
+        <button id="open-btn" type="button" class="gold-btn px-8 py-3.5 rounded-full font-label text-xs sm:text-sm tracking-[0.25em] uppercase text-ivory flex items-center gap-3">
+          <span>Tap to Enter the Garden</span>
+          <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+            <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <p class="font-body italic text-xs text-rose-blush/75 mt-3">
+          Unveil our evening floral celebration
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =====================================================================
+       AMBIENT BACKGROUND LAYERS: Bokeh Canvas, Drifting SVG Petals & Borders
+  ====================================================================== -->
+  <!-- Blurred Glowing Bokeh & Mist Canvas -->
+  <canvas id="bokeh-canvas" class="fixed inset-0 w-full h-full pointer-events-none z-0"></canvas>
+
+  <!-- Slowly Drifting Real-Looking SVG Petals Container (8-12 petals) -->
+  <div id="petal-drift-container" class="fixed inset-0 w-full h-full pointer-events-none z-20 overflow-hidden" aria-hidden="true"></div>
+
+  <!-- Delicate Twinkling Fairy Light Strands Along Page Edges -->
+  <div class="fixed inset-y-0 left-0 w-8 sm:w-12 pointer-events-none z-20 opacity-75" aria-hidden="true">
+    <svg class="w-full h-full" viewBox="0 0 40 800" preserveAspectRatio="none">
+      <path d="M6,0 Q28,100 10,200 T26,400 T8,600 T22,800" fill="none" stroke="url(#gold-foil)" stroke-width="0.6" opacity="0.6" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 2.8s; --twinkle-delay: 0.2s" cx="17" cy="95" r="5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 3.5s; --twinkle-delay: 1.1s" cx="10" cy="200" r="4.5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 3.1s; --twinkle-delay: 0.6s" cx="22" cy="310" r="5.5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 4.0s; --twinkle-delay: 1.8s" cx="15" cy="430" r="4.5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 2.9s; --twinkle-delay: 0.4s" cx="9" cy="560" r="5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 3.6s; --twinkle-delay: 1.4s" cx="20" cy="690" r="5" fill="url(#fairy-glow)" />
+    </svg>
+  </div>
+
+  <div class="fixed inset-y-0 right-0 w-8 sm:w-12 pointer-events-none z-20 opacity-75" aria-hidden="true">
+    <svg class="w-full h-full" viewBox="0 0 40 800" preserveAspectRatio="none">
+      <path d="M34,0 Q12,100 30,200 T14,400 T32,600 T18,800" fill="none" stroke="url(#gold-foil)" stroke-width="0.6" opacity="0.6" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 3.3s; --twinkle-delay: 0.7s" cx="23" cy="95" r="5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 2.7s; --twinkle-delay: 1.5s" cx="30" cy="200" r="4.5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 3.8s; --twinkle-delay: 0.3s" cx="18" cy="310" r="5.5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 3.0s; --twinkle-delay: 1.2s" cx="25" cy="430" r="4.5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 3.4s; --twinkle-delay: 0.9s" cx="31" cy="560" r="5" fill="url(#fairy-glow)" />
+      <circle class="fairy-bulb" style="--twinkle-dur: 2.9s; --twinkle-delay: 1.9s" cx="20" cy="690" r="5" fill="url(#fairy-glow)" />
+    </svg>
+  </div>
+
+  <!-- Floating Quick Music Control Button (Synced with Footer Toggle) -->
+  <button id="floating-music-btn" type="button" aria-label="Toggle ambient wedding music" class="fixed top-4 right-4 z-40 w-11 h-11 rounded-full frosted-card flex items-center justify-center text-gold-light hover:scale-105 transition-transform">
+    <svg id="music-icon-on" class="w-5 h-5" viewBox="0 0 24 24" fill="none">
+      <path d="M9 18V6L20 4V16" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="6.5" cy="18" r="2.5" stroke="url(#gold-foil)" stroke-width="1.6" />
+      <circle cx="17.5" cy="16" r="2.5" stroke="url(#gold-foil)" stroke-width="1.6" />
+    </svg>
+    <svg id="music-icon-off" class="w-5 h-5 hidden" viewBox="0 0 24 24" fill="none">
+      <path d="M9 18V6L20 4V16" stroke="url(#gold-foil)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5" />
+      <circle cx="6.5" cy="18" r="2.5" stroke="url(#gold-foil)" stroke-width="1.5" opacity="0.5" />
+      <circle cx="17.5" cy="16" r="2.5" stroke="url(#gold-foil)" stroke-width="1.5" opacity="0.5" />
+      <line x1="4" y1="4" x2="20" y2="20" stroke="#F4D9D6" stroke-width="1.8" stroke-linecap="round" />
+    </svg>
+  </button>
+
+  <!-- =====================================================================
+       MAIN INVITATION CONTENT WRAPPER WITH GOLD-FOIL FRAME
+  ====================================================================== -->
+  <div class="relative z-10 twilight-sky min-h-screen overflow-hidden">
+    
+    <!-- Outer Gold-Foil Luxury Frame Around the Invitation -->
+    <div class="fixed inset-2 sm:inset-4 border border-gold-champagne/30 rounded-2xl pointer-events-none z-30">
+      <div class="absolute inset-1 border border-gold-champagne/15 rounded-xl"></div>
+    </div>
+
+    <!-- ===================================================================
+         SECTION 2: HERO — GLOWING FLORAL ARCH GARDEN SCENE
+    ==================================================================== -->
+    <header class="relative min-h-screen flex flex-col items-center justify-between pt-8 pb-12 px-4 overflow-hidden">
+      
+      <!-- Horizon Warm Peach & Gold Glow -->
+      <div class="absolute inset-0 horizon-glow pointer-events-none" data-parallax="-0.08"></div>
+
+      <!-- Side Hanging Garden Lanterns & Twilight Foliage Silhouettes (Parallax Layer) -->
+      <div class="absolute inset-0 pointer-events-none overflow-hidden" data-parallax="-0.14" aria-hidden="true">
+        <!-- Left Hanging Lantern & Silhouette Foliage -->
+        <svg class=" lantern-sway-left absolute top-0 left-2 sm:left-8 w-24 sm:w-32 h-64" viewBox="0 0 100 220">
+          <use href="#garden-lantern" transform="translate(38, 0) scale(1.15)" />
+        </svg>
+        <!-- Right Hanging Lantern -->
+        <svg class="lantern-sway-right absolute top-0 right-2 sm:right-8 w-24 sm:w-32 h-64" viewBox="0 0 100 220">
+          <use href="#garden-lantern" transform="translate(62, -12) scale(1.05)" />
+        </svg>
+
+        <!-- Left & Right Garden Foliage Silhouettes for Depth -->
+        <svg class="absolute bottom-0 left-0 w-44 sm:w-72 h-80 opacity-50" viewBox="0 0 220 320" preserveAspectRatio="xMinYMax meet">
+          <path d="M-20,320 Q20,230 75,180 Q40,240 25,320 Z" fill="url(#foliage-silhouette)" />
+          <path d="M-10,320 Q15,200 45,120 Q15,210 10,320 Z" fill="url(#foliage-silhouette)" />
+          <path d="M10,320 Q55,250 110,220 Q65,265 45,320 Z" fill="url(#foliage-silhouette)" />
+        </svg>
+        <svg class="absolute bottom-0 right-0 w-44 sm:w-72 h-80 opacity-50" viewBox="0 0 220 320" preserveAspectRatio="xMaxYMax meet">
+          <path d="M240,320 Q200,230 145,180 Q180,240 195,320 Z" fill="url(#foliage-silhouette)" />
+          <path d="M230,320 Q205,200 175,120 Q205,210 210,320 Z" fill="url(#foliage-silhouette)" />
+          <path d="M210,320 Q165,250 110,220 Q155,265 175,320 Z" fill="url(#foliage-silhouette)" />
+        </svg>
+      </div>
+
+      <!-- Top Blessing Phrase -->
+      <div class="relative z-10 text-center mt-2 sm:mt-4">
+        <p id="text-top-blessing" class="font-label text-[11px] sm:text-xs tracking-[0.35em] uppercase text-gold-light/90">
+          With love and blessings
+        </p>
+        <svg class="w-36 h-5 mx-auto mt-1.5" viewBox="0 0 160 20" fill="none">
+          <path d="M10,10 Q45,10 68,4 M92,4 Q115,10 150,10" stroke="url(#gold-line)" stroke-width="1" stroke-linecap="round" />
+          <circle cx="80" cy="6" r="2.5" fill="url(#gold-foil)" />
+          <circle cx="62" cy="8" r="1.2" fill="url(#gold-foil)" />
+          <circle cx="98" cy="8" r="1.2" fill="url(#gold-foil)" />
+        </svg>
+      </div>
+
+      <!-- CENTERPIECE: TALL CURVED FLORAL ARCH MANDAP FRAMING COUPLE'S NAMES -->
+      <div class="relative z-10 w-full max-w-[440px] sm:max-w-[510px] mx-auto my-auto flex items-center justify-center" data-parallax="-0.04">
+        
+        <svg class="w-full h-auto max-h-[78vh] overflow-visible drop-shadow-[0_12px_35px_rgba(20,8,32,0.7)]" viewBox="0 0 500 650" fill="none" role="img" aria-label="Glowing Floral Arch framing Aniket and Shivani">
+          
+          <!-- Ambient Mandap Backlight Halo -->
+          <ellipse cx="250" cy="330" rx="185" ry="245" fill="url(#fairy-glow)" opacity="0.22" />
+
+          <!-- Fairy Light Drapes Hanging Inside the Arch -->
+          <g opacity="0.85">
+            <!-- Draped Catenary Strands -->
+            <path d="M95,215 Q175,275 250,210 Q325,275 405,215" stroke="url(#gold-foil)" stroke-width="0.6" stroke-dasharray="2 3" />
+            <path d="M78,270 Q165,335 250,255 Q335,335 422,270" stroke="url(#gold-foil)" stroke-width="0.5" stroke-dasharray="2 3" />
+            <!-- Vertical Fairy Light Drops -->
+            <line x1="125" y1="155" x2="125" y2="330" stroke="url(#gold-foil)" stroke-width="0.4" opacity="0.55" />
+            <line x1="175" y1="115" x2="175" y2="265" stroke="url(#gold-foil)" stroke-width="0.4" opacity="0.55" />
+            <line x1="250" y1="95"  x2="250" y2="225" stroke="url(#gold-foil)" stroke-width="0.4" opacity="0.55" />
+            <line x1="325" y1="115" x2="325" y2="265" stroke="url(#gold-foil)" stroke-width="0.4" opacity="0.55" />
+            <line x1="375" y1="155" x2="375" y2="330" stroke="url(#gold-foil)" stroke-width="0.4" opacity="0.55" />
+
+            <!-- Twinkling Fairy Bulbs on Arch Strands -->
+            <circle class="fairy-bulb" style="--twinkle-dur: 2.5s; --twinkle-delay: 0.1s" cx="125" cy="210" r="6" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 3.2s; --twinkle-delay: 0.9s" cx="125" cy="280" r="5.5" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 2.8s; --twinkle-delay: 0.4s" cx="125" cy="330" r="6.5" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 3.5s; --twinkle-delay: 1.3s" cx="175" cy="175" r="6" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 2.7s; --twinkle-delay: 0.6s" cx="175" cy="245" r="6.5" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 3.1s; --twinkle-delay: 0.2s" cx="212" cy="236" r="5.5" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 2.9s; --twinkle-delay: 1.1s" cx="250" cy="155" r="6" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 3.4s; --twinkle-delay: 0.5s" cx="250" cy="215" r="7" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 2.6s; --twinkle-delay: 1.5s" cx="288" cy="236" r="5.5" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 3.3s; --twinkle-delay: 0.8s" cx="325" cy="175" r="6" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 2.8s; --twinkle-delay: 0.3s" cx="325" cy="245" r="6.5" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 3.6s; --twinkle-delay: 1.2s" cx="375" cy="210" r="6" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 2.7s; --twinkle-delay: 0.7s" cx="375" cy="280" r="5.5" fill="url(#fairy-glow)" />
+            <circle class="fairy-bulb" style="--twinkle-dur: 3.0s; --twinkle-delay: 1.6s" cx="375" cy="330" r="6.5" fill="url(#fairy-glow)" />
+          </g>
+
+          <!-- Structural Gold-Foil Mandap Arch Pillars -->
+          <!-- Outer Arch Frame -->
+          <path d="M56,610 L56,265 C56,125 142,46 250,46 C358,46 444,125 444,265 L444,610" stroke="url(#gold-foil)" stroke-width="2.2" fill="rgba(26, 15, 36, 0.28)" />
+          <!-- Inner Filigree Arch Frame -->
+          <path d="M72,610 L72,268 C72,140 150,64 250,64 C350,64 428,140 428,268 L428,610" stroke="url(#gold-foil)" stroke-width="1.1" stroke-dasharray="6 4" opacity="0.85" />
+          <!-- Subtle Third Inner Rim -->
+          <path d="M84,595 L84,272 C84,152 158,76 250,76 C342,76 416,152 416,272 L416,595" stroke="url(#gold-foil)" stroke-width="0.6" opacity="0.45" />
+
+          <!-- Arch Pillar Base Pedestals -->
+          <path d="M40,610 L88,610 M46,618 L82,618" stroke="url(#gold-foil)" stroke-width="2" stroke-linecap="round" />
+          <path d="M412,610 L460,610 M418,618 L454,618" stroke="url(#gold-foil)" stroke-width="2" stroke-linecap="round" />
+
+          <!-- Self-Drawing Delicate Gold Line-Art Vines Wrapping the Arch -->
+          <path class="draw-vine" style="--vine-delay: 0.15s" d="M54,590 C32,510 86,440 56,360 C28,280 82,210 95,155 C115,92 180,52 250,44" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" fill="none" />
+          <path class="draw-vine" style="--vine-delay: 0.35s" d="M446,590 C468,510 414,440 444,360 C472,280 418,210 405,155 C385,92 320,52 250,44" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" fill="none" />
+          <path class="draw-vine" style="--vine-delay: 0.65s" d="M72,530 C95,465 44,395 75,320 C98,255 125,130 250,62 C375,130 402,255 425,320 C456,395 405,465 428,530" stroke="url(#gold-foil)" stroke-width="1.1" stroke-linecap="round" fill="none" opacity="0.8" />
+
+          <!-- ===============================================================
+               CURATED FLORAL ARRANGEMENTS ON ARCH:
+               1. Rich Crown Cluster at Top Center of Arch
+               2. Left Mid-Arch Corner Bouquet
+               3. Right Mid-Arch Corner Bouquet
+          ================================================================ -->
+
+          <!-- 1. TOP CROWN FLORAL CLUSTER -->
+          <g>
+            <!-- Trailing Eucalyptus & Gold Leaves -->
+            <g class="arch-flower" style="--bloom-delay: 0.15s">
+              <use href="#sprig-eucalyptus" transform="translate(155, 86) rotate(-68) scale(1.25)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.2s">
+              <use href="#sprig-eucalyptus" transform="translate(345, 86) scale(-1.25, 1.25) rotate(-68)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.25s">
+              <use href="#sprig-eucalyptus" transform="translate(205, 58) rotate(-42) scale(1.15)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.3s">
+              <use href="#sprig-eucalyptus" transform="translate(295, 58) scale(-1.15, 1.15) rotate(-42)" />
+            </g>
+
+            <!-- Side Roses & Peonies of Top Cluster -->
+            <g class="arch-flower" style="--bloom-delay: 0.4s">
+              <use href="#flower-rose" transform="translate(172, 74) scale(1.05)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.45s">
+              <use href="#flower-rose" transform="translate(328, 74) scale(1.05)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.55s">
+              <use href="#flower-peony" transform="translate(208, 56) scale(1.25)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.6s">
+              <use href="#flower-peony" transform="translate(292, 56) scale(1.25)" />
+            </g>
+
+            <!-- Center Sovereign Lotus & Peony Crown -->
+            <g class="arch-flower" style="--bloom-delay: 0.72s">
+              <use href="#flower-lotus" transform="translate(250, 42) scale(1.42)" />
+            </g>
+            <!-- Delicate Jasmine Accent Blooms -->
+            <g class="arch-flower" style="--bloom-delay: 0.85s">
+              <use href="#flower-jasmine" transform="translate(142, 96) scale(0.95)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.9s">
+              <use href="#flower-jasmine" transform="translate(358, 96) scale(0.95)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.95s">
+              <use href="#flower-jasmine" transform="translate(232, 76) scale(0.85)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 1.0s">
+              <use href="#flower-jasmine" transform="translate(268, 76) scale(0.85)" />
+            </g>
+          </g>
+
+          <!-- 2. LEFT PILLAR BOUQUET CLUSTER -->
+          <g>
+            <g class="arch-flower" style="--bloom-delay: 0.35s">
+              <use href="#sprig-eucalyptus" transform="translate(58, 250) rotate(18) scale(1.2)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.42s">
+              <use href="#sprig-eucalyptus" transform="translate(62, 370) rotate(145) scale(1.15)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.52s">
+              <use href="#flower-lotus" transform="translate(68, 268) rotate(55) scale(1.1)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.65s">
+              <use href="#flower-peony" transform="translate(58, 312) scale(1.32)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.78s">
+              <use href="#flower-rose" transform="translate(74, 352) scale(1.08)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.92s">
+              <use href="#flower-jasmine" transform="translate(44, 278) scale(0.9)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 1.02s">
+              <use href="#flower-jasmine" transform="translate(52, 386) scale(0.88)" />
+            </g>
+          </g>
+
+          <!-- 3. RIGHT PILLAR BOUQUET CLUSTER -->
+          <g>
+            <g class="arch-flower" style="--bloom-delay: 0.38s">
+              <use href="#sprig-eucalyptus" transform="translate(442, 250) scale(-1.2, 1.2) rotate(18)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.46s">
+              <use href="#sprig-eucalyptus" transform="translate(438, 370) scale(-1.15, 1.15) rotate(145)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.56s">
+              <use href="#flower-lotus" transform="translate(432, 268) rotate(-55) scale(1.1)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.68s">
+              <use href="#flower-peony" transform="translate(442, 312) scale(1.32)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.82s">
+              <use href="#flower-rose" transform="translate(426, 352) scale(1.08)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 0.95s">
+              <use href="#flower-jasmine" transform="translate(456, 278) scale(0.9)" />
+            </g>
+            <g class="arch-flower" style="--bloom-delay: 1.05s">
+              <use href="#flower-jasmine" transform="translate(448, 386) scale(0.88)" />
+            </g>
+          </g>
+
+          <!-- Base Arch Pillar Accent Blooms -->
+          <g class="arch-flower" style="--bloom-delay: 1.1s">
+            <use href="#flower-rose" transform="translate(64, 575) scale(0.95)" />
+            <use href="#flower-jasmine" transform="translate(82, 595) scale(0.78)" />
+          </g>
+          <g class="arch-flower" style="--bloom-delay: 1.15s">
+            <use href="#flower-rose" transform="translate(436, 575) scale(0.95)" />
+            <use href="#flower-jasmine" transform="translate(418, 595) scale(0.78)" />
+          </g>
+
+          <!-- Twinkling Star Glints on the Arch Flowers -->
+          <use href="#sparkle-star" class="star-glint" style="--glint-delay: 0.3s" transform="translate(250, 22) scale(0.8)" />
+          <use href="#sparkle-star" class="star-glint" style="--glint-delay: 1.4s" transform="translate(188, 48) scale(0.6)" />
+          <use href="#sparkle-star" class="star-glint" style="--glint-delay: 2.2s" transform="translate(312, 48) scale(0.6)" />
+          <use href="#sparkle-star" class="star-glint" style="--glint-delay: 0.9s" transform="translate(45, 310) scale(0.7)" />
+          <use href="#sparkle-star" class="star-glint" style="--glint-delay: 1.9s" transform="translate(455, 310) scale(0.7)" />
+        </svg>
+
+        <!-- COUPLE'S NAMES CENTERED INSIDE THE MANDAP ARCH -->
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-center px-12 pt-20 pb-8">
+          <p id="text-intro" class="font-script text-2xl sm:text-3xl text-rose-blush mb-3 drop-shadow">
+            We are getting married
+          </p>
+
+          <h1 class="font-display text-5xl sm:text-6xl font-medium tracking-wide leading-[1.12] gold-foil-text my-1">
+            <span id="text-groom" class="block">Aniket</span>
+            <span class="font-script text-3xl sm:text-4xl block my-1 text-gold-light/95">&amp;</span>
+            <span id="text-bride" class="block">Shivani</span>
+          </h1>
+
+          <!-- Subtle Gold Filigree Divider Under Names -->
+          <svg class="w-40 h-6 my-4" viewBox="0 0 180 24" fill="none">
+            <path d="M10,12 C50,12 65,4 90,4 C115,4 130,12 170,12" stroke="url(#gold-line)" stroke-width="1.1" />
+            <path d="M40,12 C65,12 75,20 90,20 C105,20 115,12 140,12" stroke="url(#gold-line)" stroke-width="0.8" opacity="0.75" />
+            <circle cx="90" cy="12" r="3" fill="url(#gold-foil)" />
+          </svg>
+
+          <p id="hero-date-badge" class="font-label text-xs sm:text-sm tracking-[0.28em] uppercase text-ivory/90">
+            23 December 2026 &bull; Mumbai
+          </p>
+        </div>
+      </div>
+
+      <!-- Gentle Scroll Down Indicator -->
+      <a href="#invite-section" class="relative z-10 flex flex-col items-center gap-1.5 text-gold-light/75 hover:text-gold-light transition-colors mt-2" aria-label="Scroll down to invitation details">
+        <span class="font-label text-[10px] tracking-[0.3em] uppercase">Scroll Gently</span>
+        <svg class="w-5 h-7 animate-bounce" viewBox="0 0 24 32" fill="none">
+          <rect x="5" y="2" width="14" height="22" rx="7" stroke="url(#gold-foil)" stroke-width="1.2" />
+          <circle cx="12" cy="9" r="2" fill="url(#gold-foil)" />
+          <path d="M8 27L12 31L16 27" stroke="url(#gold-foil)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+
+      <!-- Faint Mist Near the Ground of Hero -->
+      <div class="absolute inset-x-0 bottom-0 h-28 ground-mist pointer-events-none"></div>
+    </header>
+
+    <!-- ===================================================================
+         MAIN BODY SECTIONS
+    ==================================================================== -->
+    <main class="relative z-10 max-w-xl mx-auto px-5 sm:px-8 pb-20 space-y-20">
+
+      <!-- =================================================================
+           SECTION 3: INVITE MESSAGE IN ROMANTIC SCRIPT
+      ================================================================== -->
+      <section id="invite-section" class="reveal-section pt-8 text-center">
+        <div class="relative py-8 px-4">
+          <!-- Upper Gold Botanical Flourish -->
+          <svg class="w-48 h-10 mx-auto mb-4" viewBox="0 0 220 45" fill="none">
+            <path d="M15,32 Q65,32 95,16 M125,16 Q155,32 205,32" stroke="url(#gold-line)" stroke-width="1.1" stroke-linecap="round" />
+            <use href="#flower-jasmine" transform="translate(110, 18) scale(0.95)" />
+            <use href="#sparkle-star" class="star-glint" style="--glint-delay: 0.5s" transform="translate(65, 16) scale(0.55)" />
+            <use href="#sparkle-star" class="star-glint" style="--glint-delay: 1.7s" transform="translate(155, 16) scale(0.55)" />
+          </svg>
+
+          <h2 id="text-invite-line" class="font-script text-3xl sm:text-4xl text-gold-light leading-relaxed tracking-wide drop-shadow">
+            Please join us as we begin our forever
+          </h2>
+
+          <p class="font-body text-sm sm:text-base text-rose-blush/90 leading-relaxed max-w-md mx-auto mt-4 font-normal">
+            Beneath a canopy of twilight blooms and warm golden light, we invite you to share in the joy, laughter, and sacred vows of our wedding celebration.
+          </p>
+
+          <!-- Lower Gold Vine Flourish -->
+          <svg class="w-36 h-6 mx-auto mt-6" viewBox="0 0 160 24" fill="none">
+            <path d="M10,12 Q50,2 80,12 Q110,22 150,12" stroke="url(#gold-line)" stroke-width="1.1" stroke-linecap="round" />
+            <circle cx="80" cy="12" r="2.5" fill="url(#gold-foil)" />
+          </svg>
+        </div>
+      </section>
+
+      <!-- =================================================================
+           SECTION 4: THE DAY, THE TIME, THE PLACE (3 FROSTED-GLASS CARDS)
+      ================================================================== -->
+      <section class="reveal-section space-y-6" aria-label="Wedding Details">
+        
+        <!-- CARD 1: THE DAY -->
+        <article class="frosted-card rounded-2xl p-6 sm:p-8 text-center">
+          <!-- Corner Gold Filigree Ornaments -->
+          <svg class="absolute top-2.5 left-2.5 w-7 h-7 opacity-75 pointer-events-none" viewBox="0 0 32 32" fill="none">
+            <path d="M2,22 L2,6 C2,3.8 3.8,2 6,2 L22,2" stroke="url(#gold-foil)" stroke-width="1.2" stroke-linecap="round" />
+            <circle cx="6" cy="6" r="1.5" fill="url(#gold-foil)" />
+          </svg>
+          <svg class="absolute top-2.5 right-2.5 w-7 h-7 opacity-75 pointer-events-none" viewBox="0 0 32 32" fill="none">
+            <path d="M30,22 L30,6 C30,3.8 28.2,2 26,2 L10,2" stroke="url(#gold-foil)" stroke-width="1.2" stroke-linecap="round" />
+            <circle cx="26" cy="6" r="1.5" fill="url(#gold-foil)" />
+          </svg>
+
+          <!-- Custom SVG Botanical Calendar Icon -->
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none">
+              <rect x="8" y="12" width="32" height="28" rx="5" stroke="url(#gold-foil)" stroke-width="1.5" fill="rgba(217,178,111,0.08)" />
+              <line x1="8" y1="20" x2="40" y2="20" stroke="url(#gold-foil)" stroke-width="1.2" />
+              <line x1="16" y1="8" x2="16" y2="15" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" />
+              <line x1="32" y1="8" x2="32" y2="15" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" />
+              <use href="#sparkle-star" transform="translate(24, 30) scale(0.65)" />
+            </svg>
+          </div>
+
+          <h3 id="label-day" class="font-label text-xs tracking-[0.32em] uppercase text-gold-champagne mb-2">
+            The Day
+          </h3>
+          <p id="value-day" class="font-display text-2xl sm:text-3xl text-ivory tracking-wide">
+            Wednesday, 23 December 2026
+          </p>
+          <p class="font-body italic text-xs sm:text-sm text-rose-blush/80 mt-1.5">
+            An auspicious winter morning in the garden
+          </p>
+        </article>
+
+        <!-- CARD 2: THE TIME -->
+        <article class="frosted-card rounded-2xl p-6 sm:p-8 text-center">
+          <svg class="absolute top-2.5 left-2.5 w-7 h-7 opacity-75 pointer-events-none" viewBox="0 0 32 32" fill="none">
+            <path d="M2,22 L2,6 C2,3.8 3.8,2 6,2 L22,2" stroke="url(#gold-foil)" stroke-width="1.2" stroke-linecap="round" />
+            <circle cx="6" cy="6" r="1.5" fill="url(#gold-foil)" />
+          </svg>
+          <svg class="absolute top-2.5 right-2.5 w-7 h-7 opacity-75 pointer-events-none" viewBox="0 0 32 32" fill="none">
+            <path d="M30,22 L30,6 C30,3.8 28.2,2 26,2 L10,2" stroke="url(#gold-foil)" stroke-width="1.2" stroke-linecap="round" />
+            <circle cx="26" cy="6" r="1.5" fill="url(#gold-foil)" />
+          </svg>
+
+          <!-- Custom SVG Sunburst Clock Icon -->
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="24" r="15" stroke="url(#gold-foil)" stroke-width="1.5" fill="rgba(217,178,111,0.08)" />
+              <circle cx="24" cy="24" r="18" stroke="url(#gold-foil)" stroke-width="0.7" stroke-dasharray="2 4" />
+              <path d="M24 15V24L19 19" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="24" cy="24" r="2" fill="url(#gold-foil)" />
+            </svg>
+          </div>
+
+          <h3 id="label-time" class="font-label text-xs tracking-[0.32em] uppercase text-gold-champagne mb-2">
+            The Time
+          </h3>
+          <p id="value-time" class="font-display text-2xl sm:text-3xl text-ivory tracking-wide">
+            11:00 AM
+          </p>
+          <p class="font-body italic text-xs sm:text-sm text-rose-blush/80 mt-1.5">
+            Muhurat &amp; Wedding Ceremony (IST)
+          </p>
+        </article>
+
+        <!-- CARD 3: THE PLACE (WITH EDITABLE VENUE PLACEHOLDER + VIEW ON MAP) -->
+        <article class="frosted-card rounded-2xl p-6 sm:p-8 text-center">
+          <svg class="absolute top-2.5 left-2.5 w-7 h-7 opacity-75 pointer-events-none" viewBox="0 0 32 32" fill="none">
+            <path d="M2,22 L2,6 C2,3.8 3.8,2 6,2 L22,2" stroke="url(#gold-foil)" stroke-width="1.2" stroke-linecap="round" />
+            <circle cx="6" cy="6" r="1.5" fill="url(#gold-foil)" />
+          </svg>
+          <svg class="absolute top-2.5 right-2.5 w-7 h-7 opacity-75 pointer-events-none" viewBox="0 0 32 32" fill="none">
+            <path d="M30,22 L30,6 C30,3.8 28.2,2 26,2 L10,2" stroke="url(#gold-foil)" stroke-width="1.2" stroke-linecap="round" />
+            <circle cx="26" cy="6" r="1.5" fill="url(#gold-foil)" />
+          </svg>
+
+          <!-- Custom SVG Floral Map Pin Icon -->
+          <div class="w-12 h-12 mx-auto mb-3 flex items-center justify-center">
+            <svg class="w-10 h-10" viewBox="0 0 48 48" fill="none">
+              <path d="M24 41C24 41 37 29.5 37 19.5C37 12.0442 31.1797 6 24 6C16.8203 6 11 12.0442 11 19.5C11 29.5 24 41 24 41Z" stroke="url(#gold-foil)" stroke-width="1.5" fill="rgba(217,178,111,0.08)" />
+              <use href="#flower-jasmine" transform="translate(24, 19.5) scale(0.55)" />
+            </svg>
+          </div>
+
+          <h3 id="label-place" class="font-label text-xs tracking-[0.32em] uppercase text-gold-champagne mb-2">
+            The Place
+          </h3>
+
+          <!-- Editable Venue Name Placeholder -->
+          <div class="max-w-xs mx-auto">
+            <p
+              id="venue-name-input"
+              contenteditable="true"
+              spellcheck="false"
+              role="textbox"
+              aria-label="Editable wedding venue name"
+              class="venue-editable font-display text-xl sm:text-2xl text-ivory tracking-wide px-2 py-0.5 inline-block"
+              title="Tap to customize venue name"
+            >The Royal Garden Lawn</p>
+          </div>
+
+          <p id="value-city" class="font-body text-base sm:text-lg text-rose-blush mt-1">
+            Mumbai
+          </p>
+
+          <p class="font-label text-[10px] tracking-[0.2em] uppercase text-gold-light/60 mt-1">
+            Tap venue name above to customize
+          </p>
+
+          <!-- View on Map Button -->
+          <div class="mt-5">
+            <a
+              id="view-map-btn"
+              href="https://www.google.com/maps/search/?api=1&query=The+Royal+Garden+Lawn+Mumbai"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="gold-btn inline-flex items-center gap-2.5 px-6 py-2.5 rounded-full font-label text-xs tracking-[0.22em] uppercase text-ivory"
+            >
+              <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                <path d="M12 21C12 21 19 14.8 19 9.5C19 5.35786 15.866 2 12 2C8.13401 2 5 5.35786 5 9.5C5 14.8 12 21 12 21Z" stroke="url(#gold-foil)" stroke-width="1.6" />
+                <circle cx="12" cy="9.5" r="2.5" stroke="url(#gold-foil)" stroke-width="1.5" />
+              </svg>
+              <span>View on Map</span>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!-- =================================================================
+           SECTION 5: LIVE COUNTDOWN TO 23 DEC 2026, 11:00 AM IST
+      ================================================================== -->
+      <section class="reveal-section text-center" aria-label="Countdown to the Wedding">
+        <p class="font-script text-2xl sm:text-3xl text-rose-blush mb-1">
+          Counting every moment
+        </p>
+        <p class="font-label text-[11px] tracking-[0.3em] uppercase text-gold-champagne/90 mb-6">
+          Until 23 December 2026 &bull; 11:00 AM IST
+        </p>
+
+        <div id="countdown-grid" class="grid grid-cols-4 gap-2.5 sm:gap-4 max-w-md mx-auto">
+          <!-- Days -->
+          <div class="frosted-card rounded-xl py-4 px-2 flex flex-col items-center justify-center digit-box">
+            <span id="cd-days" class="digit-value font-display text-2xl sm:text-4xl gold-foil-text font-medium">
+              00
+            </span>
+            <span class="font-label text-[9px] sm:text-[10px] tracking-[0.24em] uppercase text-rose-blush/85 mt-1.5">
+              Days
+            </span>
+          </div>
+
+          <!-- Hours -->
+          <div class="frosted-card rounded-xl py-4 px-2 flex flex-col items-center justify-center digit-box">
+            <span id="cd-hours" class="digit-value font-display text-2xl sm:text-4xl gold-foil-text font-medium">
+              00
+            </span>
+            <span class="font-label text-[9px] sm:text-[10px] tracking-[0.24em] uppercase text-rose-blush/85 mt-1.5">
+              Hours
+            </span>
+          </div>
+
+          <!-- Minutes -->
+          <div class="frosted-card rounded-xl py-4 px-2 flex flex-col items-center justify-center digit-box">
+            <span id="cd-minutes" class="digit-value font-display text-2xl sm:text-4xl gold-foil-text font-medium">
+              00
+            </span>
+            <span class="font-label text-[9px] sm:text-[10px] tracking-[0.24em] uppercase text-rose-blush/85 mt-1.5">
+              Mins
+            </span>
+          </div>
+
+          <!-- Seconds -->
+          <div class="frosted-card rounded-xl py-4 px-2 flex flex-col items-center justify-center digit-box">
+            <span id="cd-seconds" class="digit-value font-display text-2xl sm:text-4xl gold-foil-text font-medium">
+              00
+            </span>
+            <span class="font-label text-[9px] sm:text-[10px] tracking-[0.24em] uppercase text-rose-blush/85 mt-1.5">
+              Secs
+            </span>
+          </div>
+        </div>
+
+        <p id="countdown-status" class="font-body italic text-xs text-gold-light/80 mt-4 hidden"></p>
+      </section>
+
+      <!-- =================================================================
+           SECTION 6: CLOSING MESSAGE WITH SOFT GLOW & ANIMATED GOLD HEART
+      ================================================================== -->
+      <section class="reveal-section relative text-center py-8 px-4">
+        <!-- Ambient Soft Rose & Gold Glow Behind Closing Message -->
+        <div class="absolute inset-0 bg-gradient-to-b from-transparent via-gold-champagne/10 to-transparent blur-2xl pointer-events-none"></div>
+
+        <!-- Animated Custom SVG Gold Heart -->
+        <div class="relative z-10 flex justify-center mb-5">
+          <svg class="w-14 h-14 gold-heart-pulse overflow-visible" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="24" fill="url(#fairy-glow)" opacity="0.45" />
+            <path
+              d="M32 52C32 52 10 38.2 10 22.5C10 15.5 15.4 10 22.2 10C26.4 10 30.1 12.2 32 15.6C33.9 12.2 37.6 10 41.8 10C48.6 10 54 15.5 54 22.5C54 38.2 32 52 32 52Z"
+              fill="url(#petal-blush)"
+              stroke="url(#gold-foil)"
+              stroke-width="2"
+            />
+            <path
+              d="M32 46C32 46 16 35.5 16 23.5C16 18.8 19.6 15 24.2 15C27.4 15 30.2 16.9 32 19.8C33.8 16.9 36.6 15 39.8 15C44.4 15 48 18.8 48 23.5C48 35.5 32 46 32 46Z"
+              fill="url(#gold-foil)"
+              opacity="0.85"
+            />
+            <use href="#sparkle-star" class="star-glint" style="--glint-delay: 0.4s" transform="translate(23, 21) scale(0.55)" />
+          </svg>
+        </div>
+
+        <blockquote id="text-closing-line" class="relative z-10 font-display italic text-xl sm:text-2xl text-ivory leading-relaxed max-w-md mx-auto">
+          “Two hearts, one love, and the rest of our lives together.”
+        </blockquote>
+
+        <p id="text-thank-you" class="relative z-10 font-script text-2xl sm:text-3xl text-gold-light mt-5">
+          Your presence will make our day special.
+        </p>
+      </section>
+
+      <!-- =================================================================
+           SECTION 7: FOOTER WITH ADD TO CALENDAR, MUSIC TOGGLE & FLORAL BORDER
+      ================================================================== -->
+      <footer class="reveal-section text-center pt-4 pb-8 space-y-8">
+        
+        <!-- Action Buttons: Add to Calendar & Music On/Off Toggle -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <!-- Add to Calendar Button (Downloads .ics & Offers Google Calendar) -->
+          <button
+            id="add-calendar-btn"
+            type="button"
+            class="gold-btn w-full sm:w-auto px-7 py-3.5 rounded-full font-label text-xs tracking-[0.22em] uppercase text-ivory inline-flex items-center justify-center gap-2.5"
+          >
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+              <rect x="3" y="5" width="18" height="16" rx="3" stroke="url(#gold-foil)" stroke-width="1.6" />
+              <line x1="3" y1="10" x2="21" y2="10" stroke="url(#gold-foil)" stroke-width="1.4" />
+              <line x1="8" y1="3" x2="8" y2="7" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" />
+              <line x1="16" y1="3" x2="16" y2="7" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" />
+              <path d="M12 13V18M9.5 15.5H14.5" stroke="url(#gold-foil)" stroke-width="1.5" stroke-linecap="round" />
+            </svg>
+            <span>Add to Calendar</span>
+          </button>
+
+          <!-- Ambient Garden Music On/Off Toggle -->
+          <button
+            id="footer-music-btn"
+            type="button"
+            class="frosted-card w-full sm:w-auto px-6 py-3.5 rounded-full font-label text-xs tracking-[0.22em] uppercase text-gold-light inline-flex items-center justify-center gap-2.5"
+          >
+            <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none">
+              <path d="M9 18V6L20 4V16" stroke="url(#gold-foil)" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+              <circle cx="6.5" cy="18" r="2.5" stroke="url(#gold-foil)" stroke-width="1.6" />
+              <circle cx="17.5" cy="16" r="2.5" stroke="url(#gold-foil)" stroke-width="1.6" />
+            </svg>
+            <span id="footer-music-label">Music: On</span>
+          </button>
+        </div>
+
+        <!-- Subtle Confirmation Toast for Calendar Download -->
+        <p id="calendar-toast" class="font-body italic text-xs text-gold-light opacity-0 transition-opacity duration-500 pointer-events-none">
+          Calendar invitation saved. You may also open in Google Calendar.
+        </p>
+
+        <!-- Footer Sign-off Wording -->
+        <div class="pt-4">
+          <p id="text-footer-signoff" class="font-script text-2xl sm:text-3xl gold-foil-text">
+            With all our love, Aniket &amp; Shivani
+          </p>
+          <p class="font-label text-[10px] tracking-[0.35em] uppercase text-rose-blush/60 mt-2">
+            23 . 12 . 2026 &bull; Mumbai
+          </p>
+        </div>
+
+        <!-- Slim Curated Floral Border at the Bottom -->
+        <div class="pt-4 max-w-md mx-auto">
+          <svg class="w-full h-24 overflow-visible" viewBox="0 0 420 90" fill="none" aria-hidden="true">
+            <!-- Delicate Gold Horizontal Vines -->
+            <path d="M10,55 Q110,25 210,50 Q310,25 410,55" stroke="url(#gold-foil)" stroke-width="1.2" fill="none" />
+            <path d="M45,62 Q130,45 210,58 Q290,45 375,62" stroke="url(#gold-foil)" stroke-width="0.7" opacity="0.7" fill="none" />
+
+            <!-- Eucalyptus Leaves Along Bottom Border -->
+            <use href="#sprig-eucalyptus" transform="translate(135, 52) rotate(-75) scale(0.85)" />
+            <use href="#sprig-eucalyptus" transform="translate(285, 52) scale(-0.85, 0.85) rotate(-75)" />
+
+            <!-- Slim Floral Cluster: Center Lotus, Side Roses & Jasmine -->
+            <use href="#flower-jasmine" transform="translate(95, 50) scale(0.75)" />
+            <use href="#flower-rose" transform="translate(158, 48) scale(0.82)" />
+            <use href="#flower-peony" transform="translate(210, 46) scale(0.95)" />
+            <use href="#flower-rose" transform="translate(262, 48) scale(0.82)" />
+            <use href="#flower-jasmine" transform="translate(325, 50) scale(0.75)" />
+
+            <!-- Twinkling Glints -->
+            <use href="#sparkle-star" class="star-glint" style="--glint-delay: 0.6s" transform="translate(210, 16) scale(0.55)" />
+            <use href="#sparkle-star" class="star-glint" style="--glint-delay: 1.8s" transform="translate(125, 34) scale(0.45)" />
+            <use href="#sparkle-star" class="star-glint" style="--glint-delay: 1.1s" transform="translate(295, 34) scale(0.45)" />
+          </svg>
+        </div>
+      </footer>
+
+    </main>
+  </div>
+
+  <!-- =====================================================================
+       JAVASCRIPT: CONFIGURATION OBJECT, ANIMATIONS, COUNTDOWN & WEB AUDIO
+  ====================================================================== -->
+  <script>
+    /**
+     * =====================================================================
+     * 1. CENTRAL WEDDING CONFIGURATION OBJECT
+     * Edit names, date, time, venue, and wording in one place.
+     * =====================================================================
+     */
+    const WEDDING_CONFIG = {
+      groom: "Aniket",
+      bride: "Shivani",
+      dateDisplay: "Wednesday, 23 December 2026",
+      timeDisplay: "11:00 AM",
+      isoDateTimeIST: "2026-12-23T11:00:00+05:30",
+      city: "Mumbai",
+      venuePlaceholder: "The Royal Garden Lawn",
+      wording: {
+        top: "With love and blessings",
+        intro: "We are getting married",
+        names: "Aniket & Shivani",
+        inviteLine: "Please join us as we begin our forever",
+        labels: {
+          day: "The Day",
+          time: "The Time",
+          place: "The Place"
+        },
+        closingLine: "“Two hearts, one love, and the rest of our lives together.”",
+        finalThankYou: "Your presence will make our day special.",
+        footer: "With all our love, Aniket & Shivani"
+      }
+    };
+
+    /**
+     * =====================================================================
+     * 2. INITIALIZE DOM WITH CONFIG DATA & MAP LINK
+     * =====================================================================
+     */
+    function applyWeddingConfig() {
+      document.getElementById('text-top-blessing').textContent = WEDDING_CONFIG.wording.top;
+      document.getElementById('text-intro').textContent = WEDDING_CONFIG.wording.intro;
+      document.getElementById('text-groom').textContent = WEDDING_CONFIG.groom;
+      document.getElementById('text-bride').textContent = WEDDING_CONFIG.bride;
+      document.getElementById('text-invite-line').textContent = WEDDING_CONFIG.wording.inviteLine;
+
+      document.getElementById('label-day').textContent = WEDDING_CONFIG.wording.labels.day;
+      document.getElementById('label-time').textContent = WEDDING_CONFIG.wording.labels.time;
+      document.getElementById('label-place').textContent = WEDDING_CONFIG.wording.labels.place;
+
+      document.getElementById('value-day').textContent = WEDDING_CONFIG.dateDisplay;
+      document.getElementById('value-time').textContent = WEDDING_CONFIG.timeDisplay;
+      document.getElementById('value-city').textContent = WEDDING_CONFIG.city;
+
+      const venueInput = document.getElementById('venue-name-input');
+      venueInput.textContent = WEDDING_CONFIG.venuePlaceholder;
+
+      document.getElementById('text-closing-line').textContent = WEDDING_CONFIG.wording.closingLine;
+      document.getElementById('text-thank-you').textContent = WEDDING_CONFIG.wording.finalThankYou;
+      document.getElementById('text-footer-signoff').textContent = WEDDING_CONFIG.wording.footer;
+
+      updateGoogleMapsLink();
+
+      // Update Google Maps query dynamically when user edits the venue placeholder
+      venueInput.addEventListener('input', updateGoogleMapsLink);
+      venueInput.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter') {
+          e.preventDefault();
+          venueInput.blur();
+        }
+      });
+    }
+
+    function updateGoogleMapsLink() {
+      const venueText = (document.getElementById('venue-name-input').textContent || '').trim() || WEDDING_CONFIG.venuePlaceholder;
+      const fullQuery = encodeURIComponent(`${venueText}, ${WEDDING_CONFIG.city}`);
+      const mapBtn = document.getElementById('view-map-btn');
+      mapBtn.href = `https://www.google.com/maps/search/?api=1&query=${fullQuery}`;
+    }
+
+    /**
+     * =====================================================================
+     * 3. GENTLE TAP-TO-OPEN OVERLAY & REVEAL SEQUENCE
+     * =====================================================================
+     */
+    function initOpeningOverlay() {
+      const overlay = document.getElementById('opening-overlay');
+      const openBtn = document.getElementById('open-btn');
+      let hasOpened = false;
+
+      function openGardenInvitation() {
+        if (hasOpened) return;
+        hasOpened = true;
+
+        overlay.classList.add('opened');
+        document.body.classList.remove('locked');
+        document.body.classList.add('scene-active');
+
+        // Start gentle ambient harp/pad synthesizer
+        AmbientGardenAudio.start();
+      }
+
+      overlay.addEventListener('click', openGardenInvitation);
+      openBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        openGardenInvitation();
+      });
+      overlay.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          openGardenInvitation();
+        }
+      });
+    }
+
+    /**
+     * =====================================================================
+     * 4. BLURRED BOKEH LIGHTS & MIST CANVAS
+     * =====================================================================
+     */
+    function initBokehCanvas() {
+      const canvas = document.getElementById('bokeh-canvas');
+      const ctx = canvas.getContext('2d');
+      let width = (canvas.width = window.innerWidth);
+      let height = (canvas.height = window.innerHeight);
+
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      const bokehCount = window.innerWidth < 640 ? 22 : 36;
+      const palette = [
+        'rgba(217, 178, 111, ', // Champagne gold
+        'rgba(244, 217, 214, ', // Soft blush
+        'rgba(255, 248, 238, ', // Warm ivory
+        'rgba(201, 139, 155, '  // Dusty rose
+      ];
+
+      const orbs = Array.from({ length: bokehCount }, () => ({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        r: 18 + Math.random() * 58,
+        vx: (Math.random() - 0.5) * 0.16,
+        vy: -0.08 - Math.random() * 0.18,
+        alpha: 0.04 + Math.random() * 0.14,
+        phase: Math.random() * Math.PI * 2,
+        colorPrefix: palette[Math.floor(Math.random() * palette.length)]
+      }));
+
+      window.addEventListener('resize', () => {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      });
+
+      function renderBokeh() {
+        ctx.clearRect(0, 0, width, height);
+
+        for (let i = 0; i < orbs.length; i++) {
+          const o = orbs[i];
+          if (!prefersReducedMotion) {
+            o.x += o.vx;
+            o.y += o.vy;
+            o.phase += 0.008;
+
+            if (o.y + o.r < 0) o.y = height + o.r;
+            if (o.x - o.r > width) o.x = -o.r;
+            if (o.x + o.r < 0) o.x = width + o.r;
+          }
+
+          const currentAlpha = o.alpha * (0.7 + 0.3 * Math.sin(o.phase));
+          const grad = ctx.createRadialGradient(o.x, o.y, 0, o.x, o.y, o.r);
+          grad.addColorStop(0, `${o.colorPrefix}${currentAlpha})`);
+          grad.addColorStop(0.55, `${o.colorPrefix}${currentAlpha * 0.45})`);
+          grad.addColorStop(1, `${o.colorPrefix}0)`);
+
+          ctx.fillStyle = grad;
+          ctx.beginPath();
+          ctx.arc(o.x, o.y, o.r, 0, Math.PI * 2);
+          ctx.fill();
+        }
+
+        if (!prefersReducedMotion) {
+          requestAnimationFrame(renderBokeh);
+        }
+      }
+
+      renderBokeh();
+    }
+
+    /**
+     * =====================================================================
+     * 5. DRIFTING REAL-LOOKING SVG PETALS (STRICTLY 10 PETALS AT A TIME)
+     * =====================================================================
+     */
+    function initDriftingSvgPetals() {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReducedMotion) return;
+
+      const container = document.getElementById('petal-drift-container');
+      const PETAL_COUNT = 10; // Between 8 and 12 as requested
+      const petals = [];
+
+      const svgNS = "http://www.w3.org/2000/svg";
+      const petalShapes = [
+        // Rose petal silhouette
+        "M12,2 C19,2 23,9 20,17 C17,24 12,26 12,26 C12,26 7,24 4,17 C1,9 5,2 12,2 Z",
+        // Soft curved peony petal
+        "M12,3 C18,1 22,8 19,16 C16,22 10,25 7,20 C3,14 6,5 12,3 Z"
+      ];
+
+      for (let i = 0; i < PETAL_COUNT; i++) {
+        const wrapper = document.createElement('div');
+        wrapper.style.position = 'absolute';
+        wrapper.style.top = '0';
+        wrapper.style.left = '0';
+        wrapper.style.willChange = 'transform';
+
+        const svg = document.createElementNS(svgNS, 'svg');
+        const size = 14 + Math.random() * 12;
+        svg.setAttribute('width', size);
+        svg.setAttribute('height', size * 1.2);
+        svg.setAttribute('viewBox', '0 0 24 28');
+
+        const path = document.createElementNS(svgNS, 'path');
+        path.setAttribute('d', petalShapes[i % petalShapes.length]);
+        path.setAttribute('fill', i % 3 === 0 ? 'url(#petal-ivory)' : 'url(#petal-blush)');
+        path.setAttribute('stroke', 'url(#gold-foil)');
+        path.setAttribute('stroke-width', '0.6');
+        path.setAttribute('opacity', '0.82');
+
+        svg.appendChild(path);
+        wrapper.appendChild(svg);
+        container.appendChild(wrapper);
+
+        petals.push({
+          el: wrapper,
+          x: Math.random() * window.innerWidth,
+          y: -40 - Math.random() * window.innerHeight,
+          speedY: 0.38 + Math.random() * 0.45,
+          swayAmp: 18 + Math.random() * 26,
+          swaySpeed: 0.008 + Math.random() * 0.012,
+          phase: Math.random() * Math.PI * 2,
+          rot: Math.random() * 360,
+          rotSpeed: (Math.random() - 0.5) * 0.6
+        });
+      }
+
+      function animatePetals() {
+        const vw = window.innerWidth;
+        const vh = window.innerHeight;
+
+        for (let i = 0; i < petals.length; i++) {
+          const p = petals[i];
+          p.y += p.speedY;
+          p.phase += p.swaySpeed;
+          p.rot += p.rotSpeed;
+
+          const currentX = p.x + Math.sin(p.phase) * p.swayAmp;
+
+          if (p.y > vh + 40) {
+            p.y = -35;
+            p.x = Math.random() * vw;
+          }
+
+          p.el.style.transform = `translate3d(${currentX.toFixed(1)}px, ${p.y.toFixed(1)}px, 0) rotate(${p.rot.toFixed(1)}deg)`;
+        }
+
+        requestAnimationFrame(animatePetals);
+      }
+
+      requestAnimationFrame(animatePetals);
+    }
+
+    /**
+     * =====================================================================
+     * 6. GENTLE SCROLL PARALLAX & INTERSECTION OBSERVER FADE-UP
+     * =====================================================================
+     */
+    function initScrollEffects() {
+      const revealEls = document.querySelectorAll('.reveal-section');
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+            }
+          });
+        },
+        { threshold: 0.14 }
+      );
+
+      revealEls.forEach((el) => observer.observe(el));
+
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReducedMotion) return;
+
+      const parallaxEls = document.querySelectorAll('[data-parallax]');
+      let ticking = false;
+
+      window.addEventListener('scroll', () => {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            const scrollY = window.pageYOffset;
+            if (scrollY < window.innerHeight * 1.3) {
+              parallaxEls.forEach((el) => {
+                const factor = parseFloat(el.getAttribute('data-parallax')) || 0;
+                const yOffset = scrollY * factor;
+                el.style.transform = `translate3d(0, ${yOffset.toFixed(1)}px, 0)`;
+              });
+            }
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }, { passive: true });
+    }
+
+    /**
+     * =====================================================================
+     * 7. LIVE COUNTDOWN TO 23 DEC 2026, 11:00 AM IST WITH SOFT DIGIT FLIP
+     * =====================================================================
+     */
+    function initCountdown() {
+      const targetTime = new Date(WEDDING_CONFIG.isoDateTimeIST).getTime();
+      const els = {
+        days: document.getElementById('cd-days'),
+        hours: document.getElementById('cd-hours'),
+        minutes: document.getElementById('cd-minutes'),
+        seconds: document.getElementById('cd-seconds')
+      };
+      const statusEl = document.getElementById('countdown-status');
+
+      const previousValues = {
+        days: '',
+        hours: '',
+        minutes: '',
+        seconds: ''
+      };
+
+      function updateDigit(key, newValue) {
+        const formatted = String(newValue).padStart(2, '0');
+        if (previousValues[key] !== formatted) {
+          const el = els[key];
+          if (previousValues[key] !== '') {
+            el.classList.add('flipping');
+            setTimeout(() => {
+              el.textContent = formatted;
+              el.classList.remove('flipping');
+            }, 210);
+          } else {
+            el.textContent = formatted;
+          }
+          previousValues[key] = formatted;
+        }
+      }
+
+      function tick() {
+        const now = Date.now();
+        const diff = targetTime - now;
+
+        if (diff <= 0) {
+          updateDigit('days', 0);
+          updateDigit('hours', 0);
+          updateDigit('minutes', 0);
+          updateDigit('seconds', 0);
+          statusEl.textContent = "Today is our wedding day — celebrating our forever!";
+          statusEl.classList.remove('hidden');
+          return;
+        }
+
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const minutes = Math.floor((diff / 1000 / 60) % 60);
+        const seconds = Math.floor((diff / 1000) % 60);
+
+        updateDigit('days', days);
+        updateDigit('hours', hours);
+        updateDigit('minutes', minutes);
+        updateDigit('seconds', seconds);
+      }
+
+      tick();
+      setInterval(tick, 1000);
+    }
+
+    /**
+     * =====================================================================
+     * 8. ADD TO CALENDAR (.ICS GENERATOR)
+     * =====================================================================
+     */
+    function initAddToCalendar() {
+      const btn = document.getElementById('add-calendar-btn');
+      const toast = document.getElementById('calendar-toast');
+
+      btn.addEventListener('click', () => {
+        const venueText = (document.getElementById('venue-name-input').textContent || '').trim() || WEDDING_CONFIG.venuePlaceholder;
+        const location = `${venueText}, ${WEDDING_CONFIG.city}`;
+        const title = `${WEDDING_CONFIG.groom} & ${WEDDING_CONFIG.bride}'s Wedding`;
+        const description = `${WEDDING_CONFIG.wording.inviteLine}. ${WEDDING_CONFIG.wording.closingLine}`;
+
+        // 23 Dec 2026, 11:00 AM IST is 05:30 AM UTC
+        const dtStart = "20261223T053000Z";
+        const dtEnd   = "20261223T103000Z";
+        const dtStamp = new Date().toISOString().replace(/[-:]/g, '').split('.')[0] + "Z";
+
+        const icsContent = [
+          "BEGIN:VCALENDAR",
+          "VERSION:2.0",
+          "PRODID:-//Aniket & Shivani Wedding//EN",
+          "CALSCALE:GREGORIAN",
+          "METHOD:PUBLISH",
+          "BEGIN:VEVENT",
+          `UID:aniket-shivani-20261223@wedding.invite`,
+          `DTSTAMP:${dtStamp}`,
+          `DTSTART:${dtStart}`,
+          `DTEND:${dtEnd}`,
+          `SUMMARY:${title}`,
+          `DESCRIPTION:${description}`,
+          `LOCATION:${location}`,
+          "STATUS:CONFIRMED",
+          "END:VEVENT",
+          "END:VCALENDAR"
+        ].join("\r\n");
+
+        const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.setAttribute('download', 'Aniket-and-Shivani-Wedding.ics');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+
+        toast.classList.remove('opacity-0');
+        setTimeout(() => toast.classList.add('opacity-0'), 4500);
+      });
+    }
+
+    /**
+     * =====================================================================
+     * 9. SELF-CONTAINED ROMANTIC GARDEN AMBIENT MUSIC (WEB AUDIO API)
+     * Synthesizes warm, dreamy harp & celesta arpeggio chords in E-flat Major
+     * =====================================================================
+     */
+    const AmbientGardenAudio = (() => {
+      let ctx = null;
+      let isPlaying = false;
+      let intervalId = null;
+      let masterGain = null;
+
+      // Dreamy E-flat Major 9th / Lydian notes (Hz)
+      const notes = [
+        311.13, // Eb4
+        392.00, // G4
+        466.16, // Bb4
+        587.33, // D5
+        622.25, // Eb5
+        698.46, // F5
+        783.99, // G5
+        932.33  // Bb5
+      ];
+      let step = 0;
+
+      function ensureContext() {
+        if (!ctx) {
+          const AudioCtx = window.AudioContext || window.webkitAudioContext;
+          ctx = new AudioCtx();
+          masterGain = ctx.createGain();
+          masterGain.gain.value = 0.16;
+          masterGain.connect(ctx.destination);
+        }
+        if (ctx.state === 'suspended') {
+          ctx.resume();
+        }
+      }
+
+      function playGentleHarpNote(freq, duration = 4.2) {
+        if (!ctx || !isPlaying) return;
+        const now = ctx.currentTime;
+
+        const osc1 = ctx.createOscillator();
+        const osc2 = ctx.createOscillator();
+        const noteGain = ctx.createGain();
+
+        osc1.type = 'sine';
+        osc2.type = 'triangle';
+
+        osc1.frequency.setValueAtTime(freq, now);
+        osc2.frequency.setValueAtTime(freq * 2, now); // Soft octave shimmer
+
+        const shimmerGain = ctx.createGain();
+        shimmerGain.gain.setValueAtTime(0.12, now);
+
+        noteGain.gain.setValueAtTime(0.001, now);
+        noteGain.gain.linearRampToValueAtTime(0.28, now + 0.18);
+        noteGain.gain.exponentialRampToValueAtTime(0.0008, now + duration);
+
+        osc1.connect(noteGain);
+        osc2.connect(shimmerGain);
+        shimmerGain.connect(noteGain);
+        noteGain.connect(masterGain);
+
+        osc1.start(now);
+        osc2.start(now);
+        osc1.stop(now + duration);
+        osc2.stop(now + duration);
+      }
+
+      function syncButtonsUI() {
+        const iconOn = document.getElementById('music-icon-on');
+        const iconOff = document.getElementById('music-icon-off');
+        const footerLabel = document.getElementById('footer-music-label');
+
+        if (isPlaying) {
+          iconOn.classList.remove('hidden');
+          iconOff.classList.add('hidden');
+          footerLabel.textContent = 'Music: On';
+        } else {
+          iconOn.classList.add('hidden');
+          iconOff.classList.remove('hidden');
+          footerLabel.textContent = 'Music: Off';
+        }
+      }
+
+      function start() {
+        try {
+          ensureContext();
+          if (isPlaying) return;
+          isPlaying = true;
+          syncButtonsUI();
+
+          // Play warm opening chord arpeggio
+          const pattern = [0, 2, 3, 4, 6, 5, 4, 2, 1, 3, 5, 7];
+          playGentleHarpNote(notes[0], 5.0);
+          setTimeout(() => isPlaying && playGentleHarpNote(notes[2], 4.5), 350);
+          setTimeout(() => isPlaying && playGentleHarpNote(notes[4], 4.8), 700);
+
+          intervalId = setInterval(() => {
+            if (!isPlaying) return;
+            const noteIndex = pattern[step % pattern.length];
+            playGentleHarpNote(notes[noteIndex], 4.6);
+            step++;
+          }, 1450);
+        } catch (err) {
+          isPlaying = false;
+          syncButtonsUI();
+        }
+      }
+
+      function stop() {
+        isPlaying = false;
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+        }
+        syncButtonsUI();
+      }
+
+      function toggle() {
+        if (isPlaying) {
+          stop();
+        } else {
+          start();
+        }
+      }
+
+      return { start, stop, toggle };
+    })();
+
+    /**
+     * =====================================================================
+     * 10. BOOTSTRAP APPLICATION ON LOAD
+     * =====================================================================
+     */
+    window.addEventListener('DOMContentLoaded', () => {
+      applyWeddingConfig();
+      initOpeningOverlay();
+      initBokehCanvas();
+      initDriftingSvgPetals();
+      initScrollEffects();
+      initCountdown();
+      initAddToCalendar();
+
+      document.getElementById('floating-music-btn').addEventListener('click', AmbientGardenAudio.toggle);
+      document.getElementById('footer-music-btn').addEventListener('click', AmbientGardenAudio.toggle);
+    });
+  </script>
+</body>
+</html>
